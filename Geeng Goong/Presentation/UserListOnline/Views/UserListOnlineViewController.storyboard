@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User List Online View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UserListOnlineViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="UserListOnlineViewController" customModule="Geeng_Goong" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tgt-1g-Pzi">
+                                <rect key="frame" x="15" y="54" width="384" height="704"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-Ad-JIP">
+                                <rect key="frame" x="62" y="788" width="290" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nW8-jk-mqc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="startTapAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iVd-ot-Emd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tgt-1g-Pzi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="1Vn-37-blq"/>
+                            <constraint firstItem="DTS-Ad-JIP" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.7" id="C3f-QZ-Nlr"/>
+                            <constraint firstItem="DTS-Ad-JIP" firstAttribute="top" secondItem="Tgt-1g-Pzi" secondAttribute="bottom" constant="30" id="IPO-iy-HKx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Tgt-1g-Pzi" secondAttribute="trailing" constant="15" id="LQz-n5-dLj"/>
+                            <constraint firstItem="DTS-Ad-JIP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="NFp-o6-6UZ"/>
+                            <constraint firstItem="Tgt-1g-Pzi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="gH2-4P-25n"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DTS-Ad-JIP" secondAttribute="bottom" constant="30" id="ifJ-Is-JAH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="DTS-Ad-JIP" id="P6m-uh-8wt"/>
+                        <outlet property="tableView" destination="Tgt-1g-Pzi" id="giv-cq-EpN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

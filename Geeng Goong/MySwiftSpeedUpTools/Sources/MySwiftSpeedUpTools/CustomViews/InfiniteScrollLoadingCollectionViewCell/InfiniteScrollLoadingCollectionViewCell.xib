@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3Me-GS-3Uh" customClass="InfiniteScrollLoadingCollectionViewCell" customModule="MySwiftSpeedUpTools">
+            <rect key="frame" x="0.0" y="0.0" width="574" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqg-eA-cgw">
+                    <rect key="frame" x="0.0" y="0.0" width="574" height="178"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="DFd-rt-ELs">
+                            <rect key="frame" x="268.5" y="70.5" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="DFd-rt-ELs" firstAttribute="centerX" secondItem="Hqg-eA-cgw" secondAttribute="centerX" id="B97-Oo-TXF"/>
+                        <constraint firstItem="DFd-rt-ELs" firstAttribute="centerY" secondItem="Hqg-eA-cgw" secondAttribute="centerY" id="IQL-3G-v4y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Hqg-eA-cgw" secondAttribute="bottom" id="1Pc-Ra-PW0"/>
+                <constraint firstItem="Hqg-eA-cgw" firstAttribute="leading" secondItem="3Me-GS-3Uh" secondAttribute="leading" id="A5V-NJ-7iR"/>
+                <constraint firstAttribute="trailing" secondItem="Hqg-eA-cgw" secondAttribute="trailing" id="jQu-vv-How"/>
+                <constraint firstItem="Hqg-eA-cgw" firstAttribute="top" secondItem="3Me-GS-3Uh" secondAttribute="top" id="zzL-jZ-EJB"/>
+            </constraints>
+            <connections>
+                <outlet property="indicatorView" destination="DFd-rt-ELs" id="lBe-xJ-3jD"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="156.69642857142856"/>
+        </collectionReusableView>
+    </objects>
+</document>

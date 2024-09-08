@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChatDateHeaderViewCell" id="jcx-t0-lM1" customClass="ChatDateHeaderViewCell" customModule="Geeng_Goong" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="571" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJD-cx-OZD">
+                    <rect key="frame" x="267.5" y="108" width="36.5" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZU-7d-kgP">
+                            <rect key="frame" x="16" y="2" width="4.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YZU-7d-kgP" firstAttribute="top" secondItem="GJD-cx-OZD" secondAttribute="top" constant="2" id="2K2-AE-bcb"/>
+                        <constraint firstAttribute="bottom" secondItem="YZU-7d-kgP" secondAttribute="bottom" constant="2" id="TLc-CQ-E6r"/>
+                        <constraint firstAttribute="trailing" secondItem="YZU-7d-kgP" secondAttribute="trailing" constant="16" id="WO9-K9-AGO"/>
+                        <constraint firstItem="YZU-7d-kgP" firstAttribute="leading" secondItem="GJD-cx-OZD" secondAttribute="leading" constant="16" id="gB3-XZ-axu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ebu-B0-Xaq"/>
+            <constraints>
+                <constraint firstItem="ebu-B0-Xaq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GJD-cx-OZD" secondAttribute="trailing" id="SP8-t8-8DU"/>
+                <constraint firstItem="GJD-cx-OZD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ebu-B0-Xaq" secondAttribute="leading" id="XvG-uQ-9q1"/>
+                <constraint firstItem="GJD-cx-OZD" firstAttribute="centerY" secondItem="ebu-B0-Xaq" secondAttribute="centerY" id="e08-MP-Lwd"/>
+                <constraint firstItem="GJD-cx-OZD" firstAttribute="centerX" secondItem="jcx-t0-lM1" secondAttribute="centerX" id="t1J-kU-tOr"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="GJD-cx-OZD" id="Puf-OG-Mvy"/>
+                <outlet property="label" destination="YZU-7d-kgP" id="NMD-C7-aM9"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="29.129464285714285"/>
+        </collectionReusableView>
+    </objects>
+</document>

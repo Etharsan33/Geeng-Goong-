@@ -1,0 +1,20 @@
+// MARK: - Global
+"ALERT_ERROR_DEFAULT_TITLE" = "Une erreur est survenue";
+"ALERT_ERROR_DEFAULT_MESSAGE" = "Veuillez essayer à nouveau.";
+"OK" = "OK";
+"CANCEL" = "Annuler";
+"TRY_AGAIN" = "Veuillez réessayer";
+"DONE" = "Valider";
+
+// MARK: - CalendarEvent
+"EVENT_ADDED_ALREADY_ALERT_TITLE" = "Évenement déjà ajouté au calendrier";
+"EVENT_ADDED_ALREADY_ALERT_MESSAGE" = "L'évenement existe déjà dans votre calendrier";
+"EVENT_ADDED_ERROR_ALERT_TITLE" = "Erreur d'ajout d'évenement au calendrier";
+"EVENT_ADDED_ERROR_ALERT_MESSAGE" = "Une erreur est survenue lors de l'ajout de l'évenement au calendrier.";
+"EVENT_NOT_ACCESS_ALERT_TITLE" = "Accès à l'application Calendrier";
+"EVENT_NOT_ACCESS_ALERT_MESSAGE" = "Veuillez donner l'accès à l'application Calendrier pour pouvoir sauvegarder des évènements. Voulez-vous aller dans les paramètres et l'activer ?";
+"EVENT_NOT_ACCESS_GO_BUTTON" = "Y Aller";
+
+// MARK: - Mail
+"ALERT_CAN_NOT_SEND_MAIL_TITLE" = "Aucun compte mail configuré";
+"ALERT_CAN_NOT_SEND_MAIL_MESSAGE" = "Votre téléphone ne peut pas envoyer d'e-mail. Veuillez vérifier les paramètres de votre compte mail puis réesayez";

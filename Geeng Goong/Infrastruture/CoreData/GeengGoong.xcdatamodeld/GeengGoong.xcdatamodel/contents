@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LocalMessage" representedClassName=".LocalMessage" syncable="YES" codeGenerationType="category">
+        <attribute name="creationDateMs" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gameId" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="text" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="LocalUser"/>
+    </entity>
+    <entity name="LocalUser" representedClassName=".LocalUser" syncable="YES" codeGenerationType="category">
+        <attribute name="avatarType" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="LocalMessage" positionX="-290.8816528320312" positionY="-74.7667236328125" width="128" height="134"/>
+        <element name="LocalUser" positionX="-35.03240966796875" positionY="3.762115478515625" width="130.0537719726562" height="74"/>
+    </elements>
+</model>

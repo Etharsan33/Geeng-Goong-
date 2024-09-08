@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fLV-is-mt3" customClass="LoadingView" customModule="MySwiftSpeedUpTools">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="422"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbs-gG-m6F">
+                    <rect key="frame" x="133" y="167.5" width="112" height="87"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6HR-gs-98c">
+                            <rect key="frame" x="37.5" y="0.0" width="37" height="37"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB8-wi-eZX">
+                            <rect key="frame" x="0.0" y="8.5" width="112" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Pb-RA-3jh">
+                            <rect key="frame" x="0.0" y="57" width="112" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wut-ro-ebh">
+                                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="leftButtonAction:" destination="fLV-is-mt3" eventType="touchUpInside" id="zVU-xW-QCP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PJ-ng-9Bl">
+                                    <rect key="frame" x="66" y="0.0" width="46" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="rightButtonAction:" destination="fLV-is-mt3" eventType="touchUpInside" id="sCi-gl-TTp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="2Pb-RA-3jh" firstAttribute="top" secondItem="6HR-gs-98c" secondAttribute="bottom" constant="20" id="0bV-x8-JIa"/>
+                        <constraint firstAttribute="bottom" secondItem="2Pb-RA-3jh" secondAttribute="bottom" id="21t-6q-ISb"/>
+                        <constraint firstAttribute="trailing" secondItem="2Pb-RA-3jh" secondAttribute="trailing" id="Eie-Db-B3p"/>
+                        <constraint firstAttribute="trailing" secondItem="bB8-wi-eZX" secondAttribute="trailing" id="KMe-PL-Tui"/>
+                        <constraint firstItem="bB8-wi-eZX" firstAttribute="centerY" secondItem="6HR-gs-98c" secondAttribute="centerY" id="LYH-IB-cat"/>
+                        <constraint firstItem="2Pb-RA-3jh" firstAttribute="leading" secondItem="gbs-gG-m6F" secondAttribute="leading" id="M0l-w6-pMc"/>
+                        <constraint firstItem="6HR-gs-98c" firstAttribute="centerX" secondItem="gbs-gG-m6F" secondAttribute="centerX" id="Rfm-mk-94h"/>
+                        <constraint firstItem="6HR-gs-98c" firstAttribute="top" secondItem="gbs-gG-m6F" secondAttribute="top" id="aQH-W2-QbW"/>
+                        <constraint firstItem="bB8-wi-eZX" firstAttribute="leading" secondItem="gbs-gG-m6F" secondAttribute="leading" id="y04-ms-68P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gbs-gG-m6F" secondAttribute="bottom" constant="20" id="ENR-Qg-rS3"/>
+                <constraint firstItem="gbs-gG-m6F" firstAttribute="centerX" secondItem="fLV-is-mt3" secondAttribute="centerX" id="Fml-6K-jek"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gbs-gG-m6F" secondAttribute="trailing" constant="20" id="JKB-yd-9sp"/>
+                <constraint firstItem="gbs-gG-m6F" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fLV-is-mt3" secondAttribute="top" constant="20" id="RBu-Qo-mO8"/>
+                <constraint firstItem="gbs-gG-m6F" firstAttribute="centerY" secondItem="fLV-is-mt3" secondAttribute="centerY" id="VdL-Jo-fPY"/>
+                <constraint firstItem="gbs-gG-m6F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fLV-is-mt3" secondAttribute="leading" constant="20" id="trv-fB-tjK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="PVU-eU-5oe"/>
+            <connections>
+                <outlet property="actionStackView" destination="2Pb-RA-3jh" id="G4o-kH-gdB"/>
+                <outlet property="activityIndicator" destination="6HR-gs-98c" id="dRs-fA-qKc"/>
+                <outlet property="cancelButton" destination="wut-ro-ebh" id="qXz-fG-5Lf"/>
+                <outlet property="containerView" destination="gbs-gG-m6F" id="l1Q-g5-JKL"/>
+                <outlet property="retryButton" destination="0PJ-ng-9Bl" id="toV-l4-bKT"/>
+                <outlet property="titleLabel" destination="bB8-wi-eZX" id="fbz-Va-zCd"/>
+            </connections>
+            <point key="canvasLocation" x="-158" y="-50"/>
+        </view>
+    </objects>
+</document>
